@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "train.py", line 179, in train
+    loss.backward(retain_graph=True)
+  File "/Volume2/tpanambur/anaconda2/envs/torchenv/lib/python3.6/site-packages/torch/tensor.py", line 93, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/Volume2/tpanambur/anaconda2/envs/torchenv/lib/python3.6/site-packages/torch/autograd/__init__.py", line 89, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: cuda runtime error (2) : out of memory at /opt/conda/conda-bld/pytorch_1524586445097/work/aten/src/THC/generic/THCStorage.cu:58
